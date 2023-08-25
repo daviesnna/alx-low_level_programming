@@ -1,28 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: 'the program's description'
+ * main - Prints the alphabet.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	int i = 0;
-	char he[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int size = sizeof(he);
-
-	while (i < (size - 1))
+	for (i = 0; i < 52; i++)
 	{
-		putchar(he[i]);
-		i++;
+		putchar(alp[i]);
 	}
-
 	putchar('\n');
 	return (0);
 }
+
